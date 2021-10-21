@@ -1,0 +1,12 @@
+{
+    "latex-workshop.docker.enabled": true,
+    "latex-workshop.docker.image.latex": "tw97223/my_repository:texlive2021",
+    "latex-workshop.latex.tools": [
+        {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": ["-gg", "%DOC%"]
+        }
+    ],
+    "latex-workshop.latex.autoClean.run": "onBuilt"
+}
