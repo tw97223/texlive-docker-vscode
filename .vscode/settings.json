@@ -10,7 +10,7 @@
           "-synctex=1",
           "-interaction=nonstopmode",
           "-file-line-error",
-          "-pdf", // Comment out this line and make a "latexmkrc" file in your current directory when you wirte a paper with Japanese(uplatex + dvipdfmx).
+          "-pdf",
           "-outdir=%OUTDIR%",
           "%DOC%"
         ],
