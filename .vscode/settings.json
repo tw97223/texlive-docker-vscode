@@ -2,11 +2,20 @@
     "latex-workshop.docker.enabled": true,
     "latex-workshop.docker.image.latex": "tw97223/my_repository:texlive2021",
     "latex-workshop.latex.tools": [
-        {
-          "name": "latexmk",
-          "command": "latexmk",
-          "args": ["-gg", "%DOC%"]
-        }
+      {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+          "-gg",
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "-pdf", // Comment out this line and make a "latexmkrc" file in your current directory when you wirte a paper with Japanese(uplatex + dvipdfmx).
+          "-outdir=%OUTDIR%",
+          "%DOC%"
+        ],
+        "env": {}
+      },
     ],
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "workbench.editorAssociations": {
