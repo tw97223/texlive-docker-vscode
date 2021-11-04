@@ -45,7 +45,6 @@
       "*.synctex.gz(busy)",
       "*.nav",
       "*.vrb",
-      "*.dvi",
-      "*.synctex.gz"
+      "*.dvi"
     ]
 }
